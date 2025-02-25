@@ -6,6 +6,7 @@ pipeline {
             steps {
                 // This checks out the code from the repository.
                 // git clone "https://github.com/Walrusil/Class7.git"
+                // In Linux: sh 'git clone https://github.com/Walrusil/Class7.git'
                 git(url: 'https://github.com/Walrusil/Class7.git', branch: 'main')
             }
         }
