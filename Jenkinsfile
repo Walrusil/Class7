@@ -5,7 +5,8 @@ pipeline {
         stage('Checkout') {
             steps {
                 // This checks out the code from the repository.
-                git clone "https://github.com/Walrusil/Class7.git"
+                // git clone "https://github.com/Walrusil/Class7.git"
+                git(url: 'https://github.com/Walrusil/Class7.git', branch: 'main')
             }
         }
         stage('Run Script') {
